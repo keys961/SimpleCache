@@ -1,5 +1,8 @@
 package cache;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.cache.Cache;
 import javax.cache.CacheManager;
 import javax.cache.configuration.CacheEntryListenerConfiguration;
@@ -14,143 +17,175 @@ import java.util.Set;
 
 public class SimpleCache<K, V> implements Cache<K, V>
 {
+    private static final Logger LOG = LoggerFactory.getLogger(SimpleCache.class);
+
     @Override
-    public V get(K key) {
+    public V get(K key)
+    {
         return null;
     }
 
     @Override
-    public Map<K, V> getAll(Set<? extends K> keys) {
+    public Map<K, V> getAll(Set<? extends K> keys)
+    {
         return null;
     }
 
     @Override
-    public boolean containsKey(K key) {
+    public boolean containsKey(K key)
+    {
         return false;
     }
 
     @Override
-    public void loadAll(Set<? extends K> keys, boolean replaceExistingValues, CompletionListener completionListener) {
+    public void loadAll(Set<? extends K> keys, boolean replaceExistingValues, CompletionListener completionListener)
+    {
 
     }
 
     @Override
-    public void put(K key, V value) {
+    public void put(K key, V value)
+    {
 
     }
 
     @Override
-    public V getAndPut(K key, V value) {
+    public V getAndPut(K key, V value)
+    {
         return null;
     }
 
     @Override
-    public void putAll(Map<? extends K, ? extends V> map) {
+    public void putAll(Map<? extends K, ? extends V> map)
+    {
 
     }
 
     @Override
-    public boolean putIfAbsent(K key, V value) {
+    public boolean putIfAbsent(K key, V value)
+    {
         return false;
     }
 
     @Override
-    public boolean remove(K key) {
+    public boolean remove(K key)
+    {
         return false;
     }
 
     @Override
-    public boolean remove(K key, V oldValue) {
+    public boolean remove(K key, V oldValue)
+    {
         return false;
     }
 
     @Override
-    public V getAndRemove(K key) {
+    public V getAndRemove(K key)
+    {
         return null;
     }
 
     @Override
-    public boolean replace(K key, V oldValue, V newValue) {
+    public boolean replace(K key, V oldValue, V newValue)
+    {
         return false;
     }
 
     @Override
-    public boolean replace(K key, V value) {
+    public boolean replace(K key, V value)
+    {
         return false;
     }
 
     @Override
-    public V getAndReplace(K key, V value) {
+    public V getAndReplace(K key, V value)
+    {
         return null;
     }
 
     @Override
-    public void removeAll(Set<? extends K> keys) {
+    public void removeAll(Set<? extends K> keys)
+    {
 
     }
 
     @Override
-    public void removeAll() {
+    public void removeAll()
+    {
 
     }
 
     @Override
-    public void clear() {
+    public void clear()
+    {
 
     }
 
     @Override
-    public <C extends Configuration<K, V>> C getConfiguration(Class<C> clazz) {
+    public <C extends Configuration<K, V>> C getConfiguration(Class<C> clazz)
+    {
         return null;
     }
 
     @Override
-    public <T> T invoke(K key, EntryProcessor<K, V, T> entryProcessor, Object... arguments) throws EntryProcessorException {
+    public <T>
+        T invoke(K key, EntryProcessor<K, V, T> entryProcessor, Object... arguments) throws EntryProcessorException
+    {
         return null;
     }
 
     @Override
-    public <T> Map<K, EntryProcessorResult<T>> invokeAll(Set<? extends K> keys, EntryProcessor<K, V, T> entryProcessor, Object... arguments) {
+    public <T> Map<K, EntryProcessorResult<T>>
+        invokeAll(Set<? extends K> keys, EntryProcessor<K, V, T> entryProcessor, Object... arguments)
+    {
         return null;
     }
 
     @Override
-    public String getName() {
+    public String getName()
+    {
         return null;
     }
 
     @Override
-    public CacheManager getCacheManager() {
+    public CacheManager getCacheManager()
+    {
         return null;
     }
 
     @Override
-    public void close() {
+    public void close()
+    {
 
     }
 
     @Override
-    public boolean isClosed() {
+    public boolean isClosed()
+    {
         return false;
     }
 
     @Override
-    public <T> T unwrap(Class<T> clazz) {
+    public <T> T unwrap(Class<T> clazz)
+    {
         return null;
     }
 
     @Override
-    public void registerCacheEntryListener(CacheEntryListenerConfiguration<K, V> cacheEntryListenerConfiguration) {
+    public void registerCacheEntryListener(CacheEntryListenerConfiguration<K, V> cacheEntryListenerConfiguration)
+    {
 
     }
 
     @Override
-    public void deregisterCacheEntryListener(CacheEntryListenerConfiguration<K, V> cacheEntryListenerConfiguration) {
+    public void deregisterCacheEntryListener(CacheEntryListenerConfiguration<K, V> cacheEntryListenerConfiguration)
+    {
 
     }
 
     @Override
-    public Iterator<Entry<K, V>> iterator() {
+    public Iterator<Entry<K, V>> iterator()
+    {
         return null;
     }
 }
