@@ -19,6 +19,9 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Manage the Cache entities
+ */
 public class SimpleCacheManager implements CacheManager
 {
     private final SimpleCacheProvider cacheProvider;

@@ -11,6 +11,9 @@ import java.util.WeakHashMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
+/**
+ * Manage the CacheManagers
+ */
 public class SimpleCacheProvider implements CachingProvider
 {
     private static final String DEFAULT_URI_STRING = "urn:X-simplecache:jsr107-default-config";

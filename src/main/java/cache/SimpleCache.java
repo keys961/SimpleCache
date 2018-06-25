@@ -19,6 +19,11 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.BiConsumer;
 
+/**
+ * Contain a K-V map for caching
+ * @param <K>: Key type
+ * @param <V>: Value type
+ */
 public class SimpleCache<K, V> implements Cache<K, V>
 {
     private static final Logger LOG = LoggerFactory.getLogger(SimpleCache.class);
